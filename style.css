@@ -1,0 +1,90 @@
+
+
+.table-widget {
+    border-radius: 1rem;
+    background: var(--table-background);
+    padding: 1.5rem;
+    border: 2px solid var(--gray-background);
+    box-shadow: 
+     rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    text-align: left;
+    overflow-x: auto;
+}
+
+.table-widget table {
+    border-collapse: collapse;
+    /* min-height: 30rem; */
+    max-width: 60rem;
+    width: 100%;
+}
+
+
+
+.table-widget th {
+    padding: 1.25rem 1rem;
+    font-size: 0.875rem;
+    color: var(--black);
+}
+
+.table-widget thead {
+    border-top: 2px solid var(--gray-background);
+}
+
+
+
+.table-widget tbody tr {
+    cursor: pointer;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+
+.table-widget td {
+    padding: 0.5rem 1rem;
+    overflow: hidden; /* Oculta el contenido que desborda el contenedor */
+    text-overflow: ellipsis; /* Agrega "..." al final del texto que se corta */
+    white-space: nowrap; /* Evita que el texto se ajuste a varias líneas */
+    word-wrap: break-word; /* Permite que las palabras largas se rompan y se ajusten */
+    max-width: 200px; /* Ajusta el ancho máximo según tus necesidades */
+}
+
+
+.text-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.text-field label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--gray-dark);
+}
+
+
+
+.text-field input {
+    padding: 0.75rem;
+    border: 1px solid #afafb1;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    color: var(--gray-dark);
+    background-color: #f1f2f3;
+    outline: none;
+}
+
+.text-field input::placeholder {
+    color: #000000; /* Cambia este valor por el color que desees */
+    opacity: 1; /* Asegura que el color del placeholder sea opaco */
+}
+
+
+.text-field .error-message {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: red;
+    display: none;
+}
+
+
